@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yes or No</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+    #result {
+      font-size: 24px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>What do you want to do?</h2>
+
+  <input id="question" type="text" placeholder="Type what you want to do..." style="width:300px; padding:8px;">
+  <button onclick="answer()" style="padding:8px 16px;">Decide for me</button>
+
+  <div id="result"></div>
+
+  <script>
+    function answer() {
+      const input = document.getElementById("question").value.trim();
+      if (!input) {
+        document.getElementById("result").innerText = "Please type something first!";
+        return;
+      }
+
+      const result = Math.random() < 0.5 ? "Yes" : "No";
+      document.getElementById("result").innerText = result;
+    }
+  </script>
+
+</body>
+</html>
