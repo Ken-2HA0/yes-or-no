@@ -5,7 +5,7 @@ This project was generated with the assistance of **ChatGPT**.
 ## 🌐 Online Usage
 You can use this project directly by visiting the following URL in your browser:
 
-https://ken-2hao.github.io/yes-or-no/
+https://ken-2ha0.github.io/yes-or-no/
 
 No installation or setup is required.
 
